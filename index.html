@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth Wave</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- LordIcon -->
+	  <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>    
+
+    <!-- Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+<body>
+  <nav>
+    <div class="nav_header">
+        <div class="nav_logo">
+          <a href="index.html " class="logo">
+            <img id="logo_nav" src="IMG/SVG/Logo Youth Wave_Azul.svg" alt="Logo Youth Wave">
+          </a>
+        </div>
+
+    <!-- Hamburguer -->
+
+    <div id="menu-btn">
+      <i class="fa-solid fa-bars" style=" color: white; width: 28px;"></i>
+      <i class="fa-solid fa-xmark" style=" color: white; display: none;"></i>
+    </div>
+    </div>  
+    <ul class="nav_links" id="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#prendas">Prendas</a></li>
+      <li><a href="#filtros">Filtros AR</a></li>
+      <li><a href="#conflicto">Concepto Ainma</a></li>
+    </ul>
+    <div class="nav_search" id="nav_search">
+      <input type="text" placeholder="Buscar">
+      <span>
+        <lord-icon
+            src="https://cdn.lordicon.com/kkvxgpti.json"
+            trigger="hover"
+            colors="primary:#5463ef"
+            style="width:28px;height:28px">
+        </lord-icon>
+      </span>
+    </div>
+  </nav>
+
+  <br>
+
+  <header class="section_container header_container" id="home">
+    <div class="header_image">
+      <img src="IMG/IMG_1.jpg" alt="img_header">  
+    </div>
+    <div class="header_content">
+      <div>
+        <h1>Te ayudamos a crear pintas con un flow violento</h1>
+        <p>
+          ¿Quieres probar nuestras prendas sin tener que salir de casa? Prueba nuestros filtros en <i>Realidad Aumentada</i> y <b>haz tu sueño realidad.</b>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <br>
+
+  <section class="section_container deals_container">
+    <div class="deals_card">
+      <h2 class="section_header">
+        ¡Excelentes descuentos pa' toda la pinta! <span>
+          <lord-icon
+              src="https://cdn.lordicon.com/tswnhcwg.json"
+              trigger="loop"
+              delay="2000"
+              style="width:60px;height:60px; padding-top: 15px;">
+          </lord-icon>
+        </span>
+      </h2>
+    </div>
+    
+    <div class="deals_card">
+      <span>
+        <lord-icon
+          src="https://cdn.lordicon.com/nipyfrzp.json"
+          trigger="loop"
+          delay="2000"
+          colors="primary:#5463ef"
+          style="width:50px;height:50px">
+        </lord-icon>
+      </span>
+      <h4>5% Cashback</h4>
+      <p>Compra la pinta, gana estilo y un <b>5% de cashback</b> pa' la próxima rumba.</p>
+    </div>
+    <div class="deals_card">
+      <span>
+        <lord-icon
+          src="https://cdn.lordicon.com/abfverha.json"
+          trigger="loop"
+          delay="2000"
+          colors="primary:#5463ef"
+          style="width:50px;height:50px">
+        </lord-icon>
+      </span>
+      <h4>30 días pa' pensarlo</h4>
+      <p>Aproveche nuestras condiciones de pago a 30 días, <b>¡Sin intereses y sin enredos!</b></p>
+    </div>
+    <div class="deals_card">
+      <span>
+        <lord-icon
+          src="https://cdn.lordicon.com/xoaqvsym.json"
+          trigger="loop"
+          delay="2000"
+          state="in-pig"
+          colors="primary:#5463ef"
+          style="width:50px;height:50px">
+        </lord-icon>
+      </span>
+      <h4>Ahorre luquitas</h4>
+      <p>Comprá ya y <b>ahorra esas lukas</b> pa'l parche, ¡Que las ofertas están prendidas!</p>
+    </div>
+  </section>
+
+  <section class="section_container about_container" id="nosotros">
+    <div class="about_header">
+      <div>
+        <h2 class="section_header"> Sobre Nosotros </h2>
+          <p class="section_description">En <b>Youth Wave</b> vivimos la onda <i>fresca y sin complique.</i> Somos la marca pa’ los que fluyen en su propio estilo, con prendas oversize y urbanas que gritan actitud.
+            Queremos que te pruebes la pinta desde donde estés, sin filas ni trancón, con filtros de realidad aumentada que te ponen la ropa en la mira. Aquí celebramos el parche y el flow
+            con descuentos brutales y cero enredos. <br> ¡Súbete a la ola de <b>Youth Wave</b> y vestite como te dé la gana!</p>
+      </div>
+    </div>
+
+    <div class="about_content">
+      <div class="about_image">
+        <img src="IMG/IMG_4.jpg" alt="About">
+      </div>
+      <div class="about_grid">
+        <div class="about_card">
+          <h3>1</h3>
+          <h4>¿Quiénes somos?</h4>
+          <p>Somos <b>Youth Wave</b>, el parche que trae el estilo urbano colombiano con toda. Nos dedicamos a crear una onda diferente donde puedes probar y lucir nuestra ropa
+            ¡Sin necesidad de ir a la tienda!</p>
+        </div>
+
+        <div class="about_card">
+          <h3>2</h3>
+          <h4>¿Qué hacemos?</h4>
+          <p>Creamos filtros de realidad aumentada en TikTok para que te pruebes nuestras prendas desde donde estés. Así puedes sentirte en una pasarela, grabar stories, hacer videos y mostrarle
+            al mundo el flow de <b>Youth Wave</b> sin moverte.</p>
+        </div>
+
+        <div class="about_card">
+          <h3>3</h3>
+          <h4>¿Cómo te ayudamos?</h4>
+          <p>Te ayudamos a descubrir tu estilo en segundos. Con nuestros filtros en AR puedes ver cómo te queda cada prenda antes de decidir. Te damos libertad, diversión y una experiencia única que
+            transforma el shopping en puro entretenimiento.</p>
+        </div>
+
+        <div class="about_card">
+          <h3>4</h3>
+          <h4>Caso de éxito</h4>
+          <p>Camila encontró su estilo gracias a <b>Youth Wave.</b> Con nuestros filtros en TikTok, se probó varias prendas, hizo un video que se volvió viral, ¡Su estilo desató miles de comentarios! Hoy es
+            parte de la ola, una embajadora de nuestro flow urbano en redes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section_container product_container" id="prendas">
+    <h2 class="section_header">Nuestras Prendas</h2>
+    <div class="product_grid">
+      <div class="product_card">
+        <h4>Camiseta <i>Renacer</i></h4>
+        <p>$90.000</p>
+        <img src="IMG/Products/Botas.png" alt="Buzo Youth wave">
+      </div>
+
+      <div class="product_card">
+        <h4>Camiseta <i>Esperanza</i></h4>
+        <p>$90.000</p>
+        <img src="IMG/Products/Flores.png" alt="Buzo Youth wave">
+      </div>
+
+      <div class="product_card">
+        <h4>Camiseta <i>Recuerdo</i></h4>
+        <p>$90.000</p>
+        <img src="IMG/Products/Culumpio.png" alt="Buzo Youth wave">
+      </div>
+
+      <div class="product_card">
+        <h4>Hoodie <i>Renacer</i></h4>
+        <p>$130.000</p>
+        <img src="IMG/Products/Hoodie_Botas.png" alt="Buzo Youth wave">
+      </div>
+
+      <div class="product_card">
+        <h4>Hoodie <i>Esperanza</i></h4>
+        <p>$110.000</p>
+        <img src="IMG/Products/Hoodie_Parvinca.png" alt="Buzo Youth wave">
+      </div>
+
+      <div class="product_card">
+        <h4>Hoodie <i>Recuerdo</i></h4>
+        <p>$130.000</p>
+        <img src="IMG/Products/Hoodie_Columpio.png" alt="Buzo Youth wave">
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="section_container client_container">
+    <div class="client_content">
+      <h2 class="section_header">¿Qué dice la <i>people</i>?</h2>
+      <p class="section_description">
+        Así hablan los que ya le metieron el flow de <b>Youth Wave</b> a su estilo. Desde Bogotá y más allá, aquí están sus opiniones, ¡Reales y sin filtro!
+      </p>
+
+      <br>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client_card">
+              <img src="IMG/Slider/IMG_1.jpg" alt="Review Products">
+              <div>
+                <p>
+                  "La chaqueta que habla por sí sola. Inspirada en las luces y el flow de la ciudad, esta pieza combina un diseño reflectivo con detalles en neón.
+                  Perfecta para los que siempre están en movimiento y quieren destacar, ya sea de día o de noche."
+                </p>
+                <h4>Liceth</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="client_card">
+              <img src="IMG/Slider/IMG_2.jpg" alt="Review Products">
+              <div>
+                <p>
+                  "Lleva el arte callejero a donde vayas. Con estampados inspirados en el grafiti bogotano y un corte oversized, esta camiseta es la esencia del streetwear
+                  local: auténtica, libre y con actitud."
+                </p>
+                <h4>Elianna</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="client_card">
+              <img src="IMG/Slider/IMG_3.jpg" alt="Review Products">
+              <div>
+                <p>
+                  "Diseñados para los que ruedan la ciudad sin parar. Estos pantalones cargo tienen bolsillos extra y detalles reflectantes para que te veas fresco y funcional.
+                  Perfectos para recorrer Bogotá en patineta o bicicleta."
+                </p>
+                <h4>Michael</h4>
+              </div>
+            </div>
+          </div>
+
+            <div class="swiper-slide">
+              <div class="client_card">
+                <img src="IMG/Slider/IMG_4.jpg" alt="Review Products">
+                <div>
+                  <p>
+                    "Hecha para quienes llevan la energía en alto. Esta sudadera combina materiales de calidad con un diseño que resalta por su estampado audaz y su capucha extra cómoda.
+                    Ideal para estar en la movida sin perder el estilo."
+                  </p>
+                  <h4>Andrea</h4>
+                </div>
+              </div>
+            </div>
+
+              <div class="swiper-slide">
+                <div class="client_card">
+                  <img src="IMG/Slider/IMG_5.jpg" alt="Review Products">
+                  <div>
+                    <p>
+                      "Un clásico de la escena urbana con el toque de Youth Wave. Inspirada en la naturaleza que rodea Bogotá, esta gorra tiene detalles bordados
+                      y un ajuste perfecto para darle altura a tu estilo."
+                    </p>
+                    <h4>Andrés</h4>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section_container about_container" id="filtros">
+
+    <h2 class="section_header"> ¿Cómo usar nuestros filtros AR? </h2>
+
+    <div class="about_content">
+      <div class="about_grid">
+        <div class="about_card">
+          <h3>1</h3>
+          <h4>Primero lo primero...</h4>
+          <p>Primero párese firme, sonría a la cámara y prepárese para armar una pinta con un flow violento que le hará florecer como nunca. ¡Vamos a vestirnos melo, parce!</p>
+        </div>
+
+        <div class="about_card">
+          <h3>2</h3>
+          <h4>Escoja su flow </h4>
+          <p>¿Hombre, mujer o ese estilo único que solo usted sabe llevar? Hoy es el momento de reinventarse y verse como siempre ha querido.
+            ¡Aquí el límite es su imaginación, parce!.</p>
+        </div>
+
+        <div class="about_card">
+          <h3>3</h3>
+          <h4>Póngase melo,</h4>
+          <p>Mire directo al lente y confíe en que Ainma está trabajando para hacerlo brillar. Esto no es cualquier filtro, es la experiencia que lo llevará a otro nivel.
+            ¡Aquí todo es flow, actitud y tecnología!</p>
+        </div>
+
+        <div class="about_card">
+          <h3>4</h3>
+          <h4>Déle una vuelta</h4>
+          <p>Mire el catálogo y busque esa pinta que grita su nombre. Aquí no hay pierde: cada prenda está diseñada para que se vea brutal.
+            ¡Deje que el estilo lo encuentre a usted!</b></p>
+        </div>
+
+        <a href="https://vm.tiktok.com/ZMhTLjpt3/" target="_blank">
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Pillar filtros AR</span>
+          </button>
+        </a>
+
+      </div>
+      
+
+      <div class="about_image">
+        <img style="border-radius: 32px;" src="IMG/App.png" alt="About">
+      </div>
+    </div>
+  </section>
+
+  <!-- Conflicto -->
+
+  <section class="section_container" id="conflicto">
+    <h2 class="section_header"> El significado detrás de <b>Ainma</b> </h2>
+
+          <p class="section_description">En Wayuunaiki, la palabra <i>Ainma</i> significa "Hacer" o "Elaborar". Este término conecta profundamente con nuestra historia como marca y con la realidad de nuestro país.
+            Colombia, marcada por décadas de conflicto armado, también es una tierra de resistencia, creatividad y reconstrucción constante. <br><br>
+            En <b>Youth Wave,</b> tomamos la esencia de <i>Ainma</i> como un símbolo de transformación.
+            Queremos convertir las cicatrices de nuestro pasado en un movimiento que florezca con fuerza y estilo. Cada prenda que diseñamos no solo refleja moda urbana, sino también un mensaje:
+            <b>podemos rehacer nuestra historia, una que combine memoria, arte y esperanza.</b> <br><br>
+            Así, nuestra marca se convierte en un puente entre la cultura, la juventud y la capacidad de "hacer" un futuro mejor. Porque en cada diseño, en cada filtro y en cada paso que damos,
+            dejamos claro que el flow colombiano está hecho para resistir, transformar y florecer.
+          </p>
+
+          <br><br>
+  
+      <div class="card">
+        <img style="margin-left: 80px;" src="IMG/Botas.png" alt="Botas Youth Wave"> <div class="card__content">
+          <p class="card__title">UN NUEVO RENACER
+          </p><p class="card__description"> En medio de la guerra, muchos jóvenes fueron forzados a usar
+            botas de guerra, cargando un peso que no les pertenecía. <br><br> Con el tiempo,
+            esas botas quedaron vacías en los campos, y en su interior comenzaron
+            a brotar margaritas. <br><br> Las flores representaban la inocencia perdida y
+            la vida que la violencia no pudo apagar, floreciendo en silencio como
+            un recordatorio de la paz que siempre merecieron.</p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img style="margin-left: 80px;" src="IMG/Columpio.png" alt="Columpio Youth Wave"> <div class="card__content">
+          <p class="card__title"> EL ULTIMO RECUERDO
+          </p><p class="card__description">En 2002, en Bojayá (Chocó), un enfrentamiento entre grupos armados dejó
+            a la comunidad atrapada dentro de una iglesia, donde buscaban refugio. <br><br>
+            Lamentablemente, la iglesia fue alcanzada por un cilindro bomba, dejando por
+            total desperdicio todo a su paso, en donde solo un columpio de la zona quedo por
+            partes siendo el ultimo recuerdo de los niños de chocó, siendo asi una tragedia que
+            se convirtió en uno de los episodios más dolorosos del conflicto.</p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img style="margin-left: 120px;" src="IMG/Parvinca Rosa.png" alt="Parvinca Rosa Youth Wave"> <div class="card__content">
+          <p class="card__title"> RAÍCES DE ESPERANZA
+          </p><p class="card__description"> La elección de la pervinca como símbolo también rinde homenaje a
+            la historia de Ciénaga, lugar de la masacre de las bananeras, un trágico
+            evento en el conflicto armado colombiano. <br><br> La pervinca se presenta en tonos
+            de rosa y violeta, con hojas y tallos verdes entrelazados, y se representa en
+            diferentes etapas de maduración, desde el florecimiento vibrante hasta tonos
+            más apagados.</p>
+        </div>
+      </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="footer" id="contact">
+    <div class="section_container footer_container">
+      <div class="footer_col">
+        <div class="footer_logo">
+          <a href="#" class="logo">
+            <img src="IMG/SVG/Logo Youth Wave_Azul.svg" alt="Logo Youth Wave">
+          </a>
+        </div>
+          <p>
+            "Únete a <b>Youth Wave</b> y transforma tu estilo con prendas que combinan elegancia y practicidad al 100%."
+          </p>
+          <ul class="footer_socials">
+            <li>
+              <a href="https://www.instagram.com/y0uth_wave/" target="_blank">
+                <lord-icon
+                    src="https://cdn.lordicon.com/ewswvzmw.json"
+                    trigger="loop"
+                    delay="2000"
+                    stroke="bold"
+                    colors="primary:#5463ef,secondary:#5463ef"
+                    style="width:50px;height:50px">
+                </lord-icon>
+              </a>
+            </li>
+            <li>
+              <a href="likedin.com" target="_blank">
+                <lord-icon
+                    src="https://cdn.lordicon.com/qgebwute.json"
+                    trigger="loop"
+                    delay="2200"
+                    stroke="bold"
+                    colors="primary:#5463ef,secondary:#5463ef"
+                    style="width:50px;height:50px">
+                </lord-icon>
+              </a>
+            </li>
+            <li>
+              <a href="tiktok.com" target="_blank">
+                <lord-icon
+                    src="https://cdn.lordicon.com/zmvgugmh.json"
+                    trigger="loop"
+                    delay="2400"
+                    stroke="bold"
+                    state="hover-draw"
+                    colors="primary:#5463ef,secondary:#5463ef"
+                    style="width:50px;height:50px">
+                </lord-icon>
+              </a>
+            </li>
+            <li>
+              <a href="whatsapp.com" target="_blank">
+                <lord-icon
+                    src="https://cdn.lordicon.com/dnphlhar.json"
+                    trigger="loop"
+                    delay="2600"
+                    stroke="bold"
+                    colors="primary:#5463ef,secondary:#5463ef"
+                    style="width:50px;height:50px">
+                </lord-icon>
+              </a>
+            </li>
+            <li>
+              <a href="whatsapp.com" target="_blank">
+                <lord-icon
+                    src="https://cdn.lordicon.com/scdlwzys.json"
+                    trigger="loop"
+                    delay="2600"
+                    stroke="bold"
+                    colors="primary:#5463ef,secondary:#5463ef"
+                    style="width:50px;height:50px">
+                </lord-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_col">
+          <h4>Nuestros Servicios</h4>
+          <ul class="footer_links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contáctanos</a></li>
+            <li><a href="#">Centro de ayuda</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Condiciones de servicio</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_col">
+          <h4>Nuestros Servicios</h4>
+          <ul class="footer_links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contáctanos</a></li>
+            <li><a href="#">Centro de ayuda</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Condiciones de servicio</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_col">
+          <h4>Nuestros Servicios</h4>
+          <ul class="footer_links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contáctanos</a></li>
+            <li><a href="#">Centro de ayuda</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Condiciones de servicio</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_bar">
+        © 2024 El estilo es tuyo, pero los derechos son nuestros. | Con sello bogotano, desde Colombia para el mundo.
+      <a href="https://lordicon.com/" style="align-content: center; justify-content: center; display: flex; padding: 10px; color: #5463EF;">Icons by Lordicon.com</a>
+      </div>
+  </footer>
+
+  <!-- Scripts -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
